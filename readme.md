@@ -12,7 +12,7 @@ by [Brandon Booth](https://brandon-booth.com/) - Winter 2022
 
 ## GettingStarted
 
-# Finding even and odd values
+### Finding even and odd values
 To find rows where a specified column has even values:
 SELECT * 
 FROM table_name 
