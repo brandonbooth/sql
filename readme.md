@@ -23,3 +23,7 @@ SELECT *
 FROM table_name 
 WHERE mod(column_name,2) <> 0;
 
+To find rows where a specified column has even values and remove duplicates:
+Select DISTINCT City
+from Station
+WHERE mod(ID,2) = 0
