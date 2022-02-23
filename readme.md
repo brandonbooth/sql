@@ -40,4 +40,38 @@ select (count(CITY)- count(distinct CITY))
 from STATION
 ```
 
+Select multiple items by length:
+```
+select CITY,LENGTH(CITY) from STATION order by Length(CITY) asc, CITY asc, CITY limit 1; 
+select CITY,LENGTH(CITY) from STATION order by Length(CITY) desc, CITY asc, CITY limit 1; 
+```
 
+:
+```
+
+```
+
+:
+```
+
+```
+
+:
+```
+
+```
+
+:
+```
+
+```
+
+:
+```
+
+```
+
+:
+```
+
+```
