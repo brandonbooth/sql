@@ -73,9 +73,21 @@ or
 SELECT DISTINCT city FROM station WHERE city REGEXP '[aeiou]$'
 ```
 
-:
+Does not start with characters:
+```
+SELECT DISTINCT CITY 
+FROM STATION
+WHERE lcase(CITY) NOT LIKE 'a%'
+AND lcase(CITY) NOT LIKE 'e%'
+AND lcase(CITY) NOT LIKE 'i%'
+AND lcase(CITY) NOT LIKE 'o%'
+AND lcase(CITY) NOT LIKE 'u%'
 ```
 
+```
+SELECT DISTINCT CITY 
+FROM STATION 
+WHERE CITY NOT RLIKE '^[aeiouAEIOU].*$'
 ```
 
 :
