@@ -46,17 +46,16 @@ select CITY,LENGTH(CITY) from STATION order by Length(CITY) asc, CITY asc, CITY 
 select CITY,LENGTH(CITY) from STATION order by Length(CITY) desc, CITY asc, CITY limit 1; 
 ```
 
-:
+Query the list of items starting with characters (i.e., a, e, i, o, or u). Your result cannot contain duplicates:
+```
+SELECT DISTINCT 
+CITY 
+FROM STATION 
+WHERE lower(substr(CITY,1,1)) in ('a','e','i','o','u')
 ```
 
-```
 
-:
-```
-
-```
-
-:
+x:
 ```
 
 ```
