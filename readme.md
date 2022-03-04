@@ -53,16 +53,24 @@ CITY
 FROM STATION 
 WHERE lower(substr(CITY,1,1)) in ('a','e','i','o','u')
 ```
-
-
-x:
+or
+```
+SELECT DISTINCT city FROM station WHERE city REGEXP '^[aeiou]'
 ```
 
+Query the list of items ending with characters (i.e., a, e, i, o, or u) with duplicates removed:
 ```
-
-:
+SELECT DISTINCT CITY FROM STATION
+WHERE lcase(CITY) LIKE '%a'
+OR lcase(CITY) LIKE '%e'
+OR lcase(CITY) LIKE '%i'
+OR lcase(CITY) LIKE '%o'
+OR lcase(CITY) LIKE '%u'
+ORDER BY CITY;
 ```
-
+or
+```
+SELECT DISTINCT city FROM station WHERE city REGEXP '[aeiou]$'
 ```
 
 :
